@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display';
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+#hero {
+  border: 3px solid black;
+  position: relative;
+}
+
+#name-heading {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  letter-spacing: 3px;
+  font-size: 32px;
+}
+
+.icon {
+  height: 30px;
+}
+
+.iconset {
+  margin: 0 auto;
+  max-width: 100px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  
+}
+
+#section1,
+#section2,
+#section3 {
+  max-width: 480px;
+  margin: auto;
+}
+
+#section1 h1 {
+  text-align: center;
+}
+
+#section1 p {
+  padding: 10px;
+}
+
+#section1 img {
+  object-fit: contain;
+  width: 100%;
+  box-shadow: 3px 3px 10px black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  text-align: center;
+}
+
+img p {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background-color: black;
+}
+
+#project-wrapper {
+  max-width: 300px;
+  margin: auto;
+  display: grid;
+  grid-template: repeat(6, 1fr) / 1fr;
+  justify-items: center;
+  gap: 5px;
+}
+
+.project {
+  min-width: 300px;
+  max-width: 400px;
+  border: 1px solid black;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  justify-items: center;
+  text-align: center;
+  background-color: #eee;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-description svg {
+  height: 20px;
+  width: 20px;
+}
+
+.project-header {
+  position: relative;
+}
+
+.project-header h3 {
+  display: inline-block;
+}
+
+.project-header .svg-set {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+#contact-me {
+  max-width: 300px;
+  margin: auto;
+}
+
+/* mobiles */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: royalblue;
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+  .project {
+    max-width: 225px;
+  }
+
+  #section1 img {
+    max-width: 400px;
+  }
+}
+
+/* small desktop screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background: pink;
+  }
+
+  #section1 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  #section1 p,
+  #section1 h2 {
+    display: inline;
+  }
+
+  #section2 {
+    max-width: 740px;
+  }
+
+  #hero {
+    height: max-content;
+  }
+
+  .iconset {
+    display: none;
+  }
+
+  #white-bg-div {
+    background-color: white;
+    box-shadow: 3px 3px 5px black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+  }
+
+  #project-wrapper {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    max-width: 740px;
+  }
+
+  #section2 h2 {
+    text-align: left;
+  }
+
+  #contact-me {
+    max-width: 740px;
+  }
+
+  #contact-me * {
+    text-align: center;
+  }
+}
+
+/* large desktop screens */
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: hotpink;
+  }
+
+  #section2 {
+    max-width: 950px;
+  }
+
+  #project-wrapper {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    max-width: 950px;
+  }
+  #contact-me {
+    max-width: 950px;
+    text-align: center;
+  }
+}
