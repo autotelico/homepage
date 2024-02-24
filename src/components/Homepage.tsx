@@ -38,7 +38,7 @@ function Section1({ windowWidth }) {
           alt="Woman standing in the woods with hands in pockets. She is facing the camera, looking slightly up and to the right of the camera"
         />
         <h2 id="name-heading">Ashley Williams</h2>
-        {windowWidth > 768 && <div id="white-bg-div">asdasda</div>}
+        {windowWidth > 768 && <div id="white-bg-div"></div>}
       <h2>About me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi

@@ -27,7 +27,6 @@ p {
 }
 
 #hero {
-  border: 3px solid black;
   position: relative;
 }
 
@@ -39,6 +38,7 @@ p {
   color: white;
   letter-spacing: 3px;
   font-size: 32px;
+  user-select: none;
 }
 
 .icon {
@@ -175,9 +175,9 @@ img p {
     transform: translate(0, 0);
   }
 
-  #section1 p,
-  #section1 h2 {
-    display: inline;
+  #name-heading {
+    font-size: 64px;
+    top: 320px;
   }
 
   #section2 {
@@ -186,13 +186,14 @@ img p {
 
   #hero {
     height: max-content;
+    font-size: 32px;
   }
 
   .iconset {
     display: none;
   }
 
-  #white-bg-div {
+  /* #white-bg-div {
     background-color: white;
     box-shadow: 3px 3px 5px black;
     position: absolute;
@@ -201,7 +202,7 @@ img p {
     left: 0;
     height: 100%;
     width: 100%
-  }
+  } */
 
   #project-wrapper {
     display: grid;
@@ -226,6 +227,15 @@ img p {
 @media screen and (min-width: 1025px) {
   body {
     background-color: hotpink;
+  }
+
+  #hero {
+    font-size: 32px;
+  }
+
+  #name-heading {
+    font-size: 64px;
+    top: 320px;
   }
 
   #section2 {
