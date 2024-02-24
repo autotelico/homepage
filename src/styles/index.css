@@ -90,7 +90,13 @@ img p {
   background-color: black;
 }
 
+.svg-set svg {
+  cursor: pointer;
+}
+
 #project-wrapper {
+  background-color: #ddd;
+  padding: 10px;
   max-width: 300px;
   margin: auto;
   display: grid;
